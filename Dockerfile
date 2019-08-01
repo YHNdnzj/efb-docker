@@ -16,7 +16,7 @@ RUN apt update \
 
 VOLUME /etc/ehforwarderbot
 WORKDIR /etc/ehforwarderbot/profiles
-ENV ETM_CONFIG 'token: "TOKEN"\nadmins: \n- ID'
+ARG ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
 RUN mkdir -p \
 		wechat/blueset.telegram \
 		qq/{blueset.telegram,milkice.qq}
