@@ -16,5 +16,4 @@ RUN apt-get update \
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
 ADD ./run.sh /opt/
-RUN chmod +x /opt/run.sh
 ENTRYPOINT ["/opt/run.sh"]
