@@ -15,5 +15,5 @@ RUN apt-get update \
 		efb-qq-slave
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
-ADD ./run.sh /opt/
+ADD run.sh /opt/
 ENTRYPOINT ["/opt/run.sh"]
