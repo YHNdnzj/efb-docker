@@ -15,4 +15,5 @@ RUN apt-get update \
 		efb-qq-slave
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
-ENTRYPOINT ["python3", "-m", "ehforwarderbot", "-p", "$EFB_PROFILE"]
+ADD ./run.sh /opt/run.sh
+ENTRYPOINT ["/opt/run.sh"]

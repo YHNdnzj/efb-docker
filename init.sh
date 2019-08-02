@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
 mkdir -p /etc/ehforwarderbot/profiles
-cd /etc/ehforwarderbot/profiles
+cd /etc/ehforwarderbot/profiles || exit
 mkdir -p wechat/blueset.telegram qq/{blueset.telegram,milkice.qq}
 echo -e "master_channel: blueset.telegram\nslave_channels: \n- blueset.wechat" > wechat/config.yaml
 echo -e "master_channel: blueset.telegram\nslave_channels: \n- milkice.qq" > qq/config.yaml
