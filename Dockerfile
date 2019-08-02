@@ -1,7 +1,7 @@
 FROM debian:buster-slim
 MAINTAINER yhndnzj
 
-ENV DEBIAN_FRONTEND noninteractiv
+ENV DEBIAN_FRONTEND Noninteractive
 RUN apt-get update \
 	&& apt-get install -y \
 		python3-pip \
