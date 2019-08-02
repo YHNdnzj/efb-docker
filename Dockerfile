@@ -18,7 +18,8 @@ WORKDIR /etc/ehforwarderbot/profiles
 ARG ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
 RUN mkdir -p \
 		wechat/blueset.telegram \
-		qq/{blueset.telegram,milkice.qq} \
+		qq/blueset.telegram \
+		qq/milkice.qq \
 	&& echo -e \
 		"master_channel: blueset.telegram\nslave_channels: \n- blueset.wechat" \
 		> wechat/config.yaml \
