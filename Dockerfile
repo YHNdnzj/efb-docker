@@ -1,8 +1,8 @@
 FROM debian:buster-slim
 MAINTAINER yhndnzj
 
-RUN apt update \
-	&& apt install -y \
+RUN apt-get update \
+	&& apt-get install -y \
 		python3-pip \
 		python3-wheel \
 		ffmpeg \
