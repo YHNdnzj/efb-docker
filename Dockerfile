@@ -14,4 +14,5 @@ RUN apt-get update \
 		efb-wechat-slave \
 		efb-qq-slave
 
+ENV EFB_DATA_PATH /etc/ehforwarderbot
 ENTRYPOINT ["python3", "-m", "ehforwarderbot", "-p", "$EFB_PROFILE"]
