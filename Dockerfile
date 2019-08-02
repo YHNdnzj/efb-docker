@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-MAINTAINER YHNdnzj
+MAINTAINER yhndnzj
 
 RUN apt update \
 	&& apt install -y \
