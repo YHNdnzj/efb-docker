@@ -33,7 +33,4 @@ RUN mkdir -p \
 		"$ETM_CONFIG" \
 		> qq/blueset.telegram/config.yaml
 
-ADD ./run.sh /opt/
-RUN chmod +x \
-	/opt/run.sh
-ENTRYPOINT ["/opt/run.sh"]
+ENTRYPOINT ["python3", "-m", "ehforwarderbot", "-p", "$EFB_PROFILE"]
