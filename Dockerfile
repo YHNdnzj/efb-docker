@@ -33,7 +33,7 @@ RUN mkdir -p \
 		"$ETM_CONFIG" \
 		> qq/blueset.telegram/config.yaml
 
-ADD ./efb.sh /opt/
+ADD ./run.sh /opt/
 RUN chmod +x \
-	/opt/efb.sh
-ENTRYPOINT ["/opt/efb.sh"]
+	/opt/run.sh
+ENTRYPOINT ["/opt/run.sh"]
