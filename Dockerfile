@@ -13,7 +13,6 @@ RUN apt-get update \
 		efb-telegram-master \
 		efb-wechat-slave \
 		efb-qq-slave
-
 VOLUME /etc/ehforwarderbot
 WORKDIR /etc/ehforwarderbot/profiles
 ARG ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
@@ -32,5 +31,4 @@ RUN mkdir -p \
 	&& echo -e \
 		"$ETM_CONFIG" \
 		> qq/blueset.telegram/config.yaml \
-
 ENTRYPOINT ["python3", "-m", "ehforwarderbot", "-p", "$EFB_PROFILE"]
