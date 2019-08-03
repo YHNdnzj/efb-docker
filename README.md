@@ -1,6 +1,6 @@
 # efb-docker
 
-![[Docker Cloud Automated build](https://hub.docker.com/r/yhndnzj/efb/builds)](https://img.shields.io/docker/cloud/automated/yhndnzj/efb?style=for-the-badge)![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yhndnzj/efb?style=for-the-badge)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/yhndnzj/efb?style=for-the-badge)![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yhndnzj/efb?style=for-the-badge)
 
 ## Init
 
