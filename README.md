@@ -1,6 +1,6 @@
 # efb-docker
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yhndnzj/efb?style=for-the-badge)
+![[Docker Cloud Automated build](https://hub.docker.com/r/yhndnzj/efb/builds)](https://img.shields.io/docker/cloud/automated/yhndnzj/efb?style=for-the-badge)![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yhndnzj/efb?style=for-the-badge)
 
 ## Init
 
@@ -15,3 +15,4 @@ curl -fsSL https://raw.githubusercontent.com/YHNdnzj/efb-docker/master/init.sh |
 docker run -d -e EFB_PROFILE=wechat --name efb-wechat -v /etc/ehforwarderbot:/etc/ehforwarderbot yhndnzj/efb
 docker logs -f efb-wechat
 ```
+
