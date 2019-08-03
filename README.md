@@ -1,5 +1,7 @@
 # efb-docker
 
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/yhndnzj/efb?style=for-the-badge)
+
 ## Init
 
 ```shell
