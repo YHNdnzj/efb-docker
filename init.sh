@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
 mkdir -p /etc/ehforwarderbot/profiles
 cd /etc/ehforwarderbot/profiles || exit
