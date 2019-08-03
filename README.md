@@ -9,6 +9,8 @@ docker pull yhndnzj/efb
 curl -fsSL https://raw.githubusercontent.com/YHNdnzj/efb-docker/master/init.sh | bash
 ```
 
+參考我的博客中的說明設定 [WeChat](https://yhndnzj.com/2019/05/24/send-and-receive-messages-from-wechat-on-telegram/#ETM) 與 [QQ](https://yhndnzj.com/2019/05/26/send-and-receive-messages-from-qq-on-telegram/#ETM) Profile 的 **ETM**
+
 ## WeChat
 
 ```shell
@@ -20,7 +22,7 @@ docker logs -f efb-wechat
 
 `wget https://raw.githubusercontent.com/YHNdnzj/efb-docker/master/docker-compose.yml`
 
-將其中的 `ehForwarderBot` 替換爲自己的密碼，`ACCOUNT` 替換爲 QQ 賬號 
+**將其中的 `ehForwarderBot` 替換爲自己的密碼，`ACCOUNT` 替換爲 QQ 賬號** 
 
 `docker-compose up -d`
 
