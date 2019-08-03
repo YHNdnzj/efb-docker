@@ -10,6 +10,6 @@ curl -fsSL https://raw.githubusercontent.com/YHNdnzj/efb-docker/master/init.sh |
 ## WeChat
 
 ```shell
-docker run -d --name efb-wechat -v /etc/ehforwarderbot:/etc/ehforwarderbot -e EFB_PROFILE=wechat yhndnzj/efb
+docker run -d -e EFB_PROFILE=wechat --name efb-wechat -v /etc/ehforwarderbot:/etc/ehforwarderbot yhndnzj/efb
 docker logs -f efb-wechat
 ```
