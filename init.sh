@@ -1,5 +1,6 @@
 #!/bin/bash
 ETM_CONFIG='token: "TOKEN"\nadmins: \n- ID'
+docker pull yhndnzj/efb
 mkdir -p /etc/ehforwarderbot/profiles
 cd /etc/ehforwarderbot/profiles || exit 1
 mkdir -p wechat/blueset.telegram qq/{blueset.telegram,milkice.qq/coolq}
