@@ -4,9 +4,7 @@
 
 ## Init
 
-```shell
-curl -fsSL https://github.com/YHNdnzj/efb-docker/raw/master/init.sh | bash
-```
+`curl -fsSL https://github.com/YHNdnzj/efb-docker/raw/master/init.sh | bash`
 
 參考我的博客中的說明設定 [WeChat](https://yhndnzj.com/2019/05/24/send-and-receive-messages-from-wechat-on-telegram/#ETM) 與 [QQ](https://yhndnzj.com/2019/05/26/send-and-receive-messages-from-qq-on-telegram/#ETM) Profile 的 **ETM**
 
