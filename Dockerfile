@@ -20,7 +20,7 @@ RUN apt-get update \
 		ehforwarderbot \
 		efb-telegram-master \
 		efb-wechat-slave \
-		efb-qq-slave
+		efb-qq-slave \
 	&& apt-get -qy purge \
 		python3-pip \
 		python3-wheel \
