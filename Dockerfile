@@ -1,19 +1,33 @@
-FROM python:3
+FROM debian:stable-slim
 MAINTAINER yhndnzj
 
 WORKDIR /opt
-ADD ptb.sh ./
+ADD build_script/* ./
 RUN apt-get update \
-	&& apt-get install -y \
-		ffmpeg \
+	&& apt-get -qy install \
+		libmagic1 \
+		libwebp6 \
+		python3 \
+		python3-pkg-resources \
+		python3-pip \
+		python3-wheel \
+		wget \
+		unzip \
 	&& ./ptb.sh \
 	&& rm ptb.sh \
-	&& pip install \
+		"$HOME"/.wget-hsts \
+	&& pip3 install --no-cache-dir \
 		ehforwarderbot \
 		efb-telegram-master \
 		efb-wechat-slave \
 		efb-qq-slave
+	&& apt-get -qy purge \
+		python3-pip \
+		python3-wheel \
+		wget \
+		unzip \
+	&& apt-get -qy --purge autoremove \
+	&& apt-get clean
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
-ADD run.sh ./
 ENTRYPOINT ["./run.sh"]
