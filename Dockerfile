@@ -14,6 +14,8 @@ RUN apt-get update \
 		python3-wheel \
 		wget \
 		unzip \
+	&& apt-get -qy --no-install-recommends install \
+		ffmpeg \
 	&& ./ptb.sh \
 	&& rm ptb.sh \
 		"$HOME"/.wget-hsts \
