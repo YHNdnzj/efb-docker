@@ -9,6 +9,8 @@ RUN apt-get update \
 		libwebp6 \
 		python3 \
 		python3-pkg-resources \
+		python3-six \
+		python3-cryptography \
 		python3-pip \
 		python3-wheel \
 		wget \
