@@ -7,7 +7,6 @@ RUN apt-get update \
 	&& apt-get -qy install \
 		libmagic1 \
 		libwebp6 \
-		python3 \
 		python3-pkg-resources \
 		python3-six \
 		python3-cryptography \
