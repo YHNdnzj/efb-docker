@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:sid-slim
 MAINTAINER yhndnzj
 
 WORKDIR /opt
