@@ -14,6 +14,7 @@ RUN apt-get update \
 		python3-flask \
 		python3-markupsafe \
 		python3-decorator \
+		python3-imageio \
 		python3-pydub \
 		python3-magic \
 		python3-requests \
