@@ -23,7 +23,6 @@ RUN apt-get update \
 		python3-wheel \
 		wget \
 		unzip \
-		"$HOME"/.wget-hsts \
 	&& pip3 install --no-cache-dir \
 		ehforwarderbot \
 		efb-telegram-master \
