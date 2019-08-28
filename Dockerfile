@@ -1,8 +1,6 @@
 FROM debian:sid-slim
 MAINTAINER yhndnzj
 
-WORKDIR /opt
-ADD build_script/* ./
 RUN apt-get update \
 	&& apt-get -qy install \
 		libwebp6 \
@@ -25,8 +23,6 @@ RUN apt-get update \
 		python3-wheel \
 		wget \
 		unzip \
-	&& ./ptb.sh \
-	&& rm ptb.sh \
 		"$HOME"/.wget-hsts \
 	&& pip3 install --no-cache-dir \
 		ehforwarderbot \
@@ -42,4 +38,5 @@ RUN apt-get update \
 	&& apt-get clean
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
-ENTRYPOINT ["./run.sh"]
+ADD run.sh /opt/
+ENTRYPOINT ["/opt/run.sh"]
