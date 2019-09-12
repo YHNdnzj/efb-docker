@@ -37,5 +37,5 @@ RUN apt-get update \
 	&& apt-get clean
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
-ADD run.sh /opt/
-ENTRYPOINT ["/opt/run.sh"]
+ADD efb.sh /usr/local/bin/efb
+ENTRYPOINT ["/usr/local/bin/efb"]
