@@ -21,8 +21,6 @@ RUN apt-get update \
 		python3-xmltodict \
 		python3-pip \
 		python3-wheel \
-		wget \
-		unzip \
 	&& pip3 install --no-cache-dir \
 		ehforwarderbot \
 		efb-telegram-master \
@@ -31,8 +29,6 @@ RUN apt-get update \
 	&& apt-get -qy purge \
 		python3-pip \
 		python3-wheel \
-		wget \
-		unzip \
 	&& apt-get -qy --purge autoremove \
 	&& apt-get clean
 
