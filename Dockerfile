@@ -14,11 +14,18 @@ RUN apt-get update \
 		python3-decorator \
 		python3-pydub \
 		python3-magic \
-		python3-requests \
 		python3-ruamel.yaml \
 		python3-tqdm \
 		python3-typing-extensions \
 		python3-xmltodict \
+		python3-cairosvg \
+		python3-humanize \
+		python3-cairocffi \
+		python3-defusedxml \
+		python3-cssselect2 \
+		python3-tinycss2 \
+		python3-numpy \
+		python3-pycparser \
 		python3-pip \
 		python3-wheel \
 	&& pip3 install --no-cache-dir \
