@@ -20,10 +20,8 @@ RUN apt-get update \
 		python3-xmltodict \
 		python3-cairosvg \
 		python3-humanize \
-		python3-cairocffi \
 		python3-defusedxml \
 		python3-cssselect2 \
-		python3-tinycss2 \
 		python3-numpy \
 		python3-pycparser \
 		python3-pip \
