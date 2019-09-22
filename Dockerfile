@@ -31,10 +31,9 @@ RUN apt-get update \
 		efb-telegram-master \
 		efb-wechat-slave \
 		efb-qq-slave \
-	&& apt-get -qy purge \
+	&& apt-get -qy --purge autoremove \
 		python3-pip \
 		python3-wheel \
-	&& apt-get -qy --purge autoremove \
 	&& apt-get clean
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
