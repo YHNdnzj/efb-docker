@@ -28,3 +28,5 @@ CoolQ:
     air_option:
         upload_to_smms: true
 EOF
+
+# vim: set ft=sh ts=4 sw=4 et:
