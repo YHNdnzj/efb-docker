@@ -11,7 +11,6 @@ RUN apt-get update \
         python3-pyqrcode \
         python3-flask \
         python3-markupsafe \
-        python3-decorator \
         python3-pydub \
         python3-magic \
         python3-ruamel.yaml \
@@ -24,6 +23,14 @@ RUN apt-get update \
         python3-cssselect2 \
         python3-numpy \
         python3-pycparser \
+        python3-certifi \
+        python3-urllib3 \
+        python3-requests \
+        python3-portend \
+        python3-zc.lockfile \
+        python3-cheroot \
+        python3-yaml \
+        python3-idna \
         python3-pip \
         python3-wheel \
     && pip3 install --no-cache-dir \
