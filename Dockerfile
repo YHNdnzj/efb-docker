@@ -3,39 +3,17 @@ MAINTAINER yhndnzj
 
 RUN apt-get update \
     && apt-get -qy install \
-        python3-peewee \
-        python3-retrying \
-        python3-pyqrcode \
-        python3-flask \
-        python3-markupsafe \
-        python3-pydub \
-        python3-magic \
-        python3-ruamel.yaml \
-        python3-tqdm \
-        python3-typing-extensions \
-        python3-xmltodict \
-        python3-cairosvg \
-        python3-humanize \
-        python3-numpy \
-        python3-pycparser \
-        python3-requests \
-        python3-portend \
-        python3-zc.lockfile \
-        python3-cheroot \
-        python3-yaml \
-        python3-python-telegram-bot \
-        python3-idna \
         python3-pip \
         python3-wheel \
+        ffmpeg \
+        libmagic1 \
+        libwebp6 \
+    && apt-get clean \
     && python3 -m pip install --no-cache-dir \
         ehforwarderbot \
         efb-telegram-master \
-        efb-wechat-slave \
-        efb-qq-slave \
-    && apt-get -qy --purge autoremove \
-        python3-pip \
-        python3-wheel \
-    && apt-get clean
+        efb-wechat-slave
+        #efb-qq-slave
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
 ADD efb.sh /usr/local/bin/efb
