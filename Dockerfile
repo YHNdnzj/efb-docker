@@ -8,12 +8,16 @@ RUN apt-get update \
         ffmpeg \
         libmagic1 \
         libwebp6 \
+        git \
+        python3-dev \
+        build-essential \
     && apt-get clean \
     && python3 -m pip install --no-cache-dir \
         ehforwarderbot \
         efb-telegram-master \
-        efb-wechat-slave
-        #efb-qq-slave
+        efb-wechat-slave \
+        git+https://github.com/milkice233/efb-qq-slave.git \
+        git+https://github.com/milkice233/efb-qq-plugin-iot.git
 
 ENV EFB_DATA_PATH /etc/ehforwarderbot
 ADD efb.sh /usr/local/bin/efb
